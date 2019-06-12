@@ -10,7 +10,14 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 import shiq.com.common.BuildConfig
+import shiq.com.common.retrofit.RetrofitHelper
+import java.io.IOException
+import java.net.ConnectException
 import java.util.regex.Pattern
 
 /**
@@ -108,3 +115,6 @@ fun EditText.checkEtNotNull(): Boolean {
     this.setSelection(text.length)
     return true
 }
+
+
+

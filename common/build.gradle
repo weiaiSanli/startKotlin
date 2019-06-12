@@ -63,6 +63,9 @@ dependencies {
     //okhttp
     api 'com.squareup.okhttp3:logging-interceptor:3.10.0'
     api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    //kotlin的协程库  1:DSL使用  2:Dispatchers.Main 使用
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0-M1")
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0-M1'
 
     //阿里的Arouter
     api 'com.alibaba:arouter-api:1.5.0'

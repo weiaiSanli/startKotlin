@@ -1,6 +1,7 @@
 package shiq.com.login_module.utils
 
 import io.reactivex.Observable
+import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
 import shiq.com.login_module.bean.LoginBean
@@ -16,4 +17,10 @@ interface LoginApi {
      */
     @GET("appWater/userLogin.action")
     fun loginCall(@QueryMap map: Map<String, String>): Observable<LoginBean>
+
+    /**
+     * 登录操作的请求
+     */
+    @GET("appWater/userLogin.action")
+    fun login(@QueryMap map: Map<String, String>): Call<LoginBean>
 }
