@@ -42,8 +42,6 @@ fun <ResultType> CoroutineScope.retrofit(
             response?.let {
                 if (response.isSuccessful) {
 
-                    response.body().toString().log()
-
                     retrofitCoroutine.onSuccess?.invoke(response.body())
                 } else {
                     // 处理 HTTP code

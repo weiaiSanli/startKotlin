@@ -4,6 +4,8 @@ import io.reactivex.Observable
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
+import shiq.com.common.retrofit.RetrofitHelper
+import shiq.com.common.utils.ConstanceBase
 import shiq.com.login_module.bean.LoginBean
 
 /**
@@ -11,6 +13,12 @@ import shiq.com.login_module.bean.LoginBean
  *
  */
 interface LoginApi {
+
+    companion object{
+
+        var instance = RetrofitHelper.instance.create(LoginApi::class.java, ConstanceBase.BASE_URL)
+
+    }
 
     /**
      * 登录操作的请求
