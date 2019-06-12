@@ -5,6 +5,7 @@ import android.provider.SyncStateContract
 import android.support.annotation.ColorRes
 import android.support.v4.content.ContextCompat
 import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.widget.EditText
 import android.widget.ImageView
@@ -114,6 +115,13 @@ fun EditText.checkEtNotNull(): Boolean {
     }
     this.setSelection(text.length)
     return true
+}
+
+//使用DSL扩展EditText函数
+inline fun EditText.onTextChange(textWatcher: TextWatcherDsl.() -> Unit): TextWatcher {
+    val watcher = TextWatcherDsl().apply(textWatcher)
+    addTextChangedListener(watcher)
+    return watcher
 }
 
 

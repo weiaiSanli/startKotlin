@@ -1,9 +1,12 @@
 package shiq.com.login_module.activity
 
+import android.content.Context
 import android.support.v4.util.ArrayMap
 import android.widget.Button
 import android.widget.EditText
 import shiq.com.common.base.basemvp.MvpActivity
+import shiq.com.common.utils.log
+import shiq.com.common.utils.onTextChange
 import shiq.com.common.utils.toEditable
 import shiq.com.common.utils.toast
 import shiq.com.login_module.R
@@ -46,6 +49,16 @@ class LoginActivity : MvpActivity<LoginActyPresenter>(), LoginActyContract.View 
     }
 
     override fun setListener() {
+
+        etUser.onTextChange {
+            afterTextChanged { s ->
+
+                "当前值为: ${s.toString()}".log()
+
+            }
+
+        }
+
 
         btLogin.setOnClickListener{
 
