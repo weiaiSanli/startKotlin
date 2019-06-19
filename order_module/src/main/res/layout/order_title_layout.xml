@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@color/colorWhite"
+		android:layout_width="match_parent"
+		android:layout_height="45dp">
+
+	<RelativeLayout
+			android:background="@color/colorWhite"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp">
+
+		<ImageView
+				android:id="@+id/iv_back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:src="@mipmap/back"/>
+
+		<TextView
+				android:id="@+id/tv_title_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:text="1桶水"
+				android:textColor="@color/colorblack"
+				android:textSize="16sp"/>
+
+
+	</RelativeLayout>
+
+
+	<ImageView
+			android:layout_alignParentBottom="true"
+			android:src="@mipmap/cut_line"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+
+	<LinearLayout
+			android:id="@+id/ll_comp_quit"
+			android:layout_width="wrap_content"
+			android:padding="5dp"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true">
+
+		<TextView
+				android:id="@+id/tv_right"
+				android:layout_centerInParent="true"
+				android:layout_alignParentRight="true"
+				android:paddingRight="10dp"
+				android:paddingLeft="10dp"
+				android:text="查询"
+				android:layout_width="wrap_content"
+				style="@style/s14c5d5d5d"
+				android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+
+</RelativeLayout>

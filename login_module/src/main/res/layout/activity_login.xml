@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@mipmap/login_bussiness">
+
+    <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="100dp"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"
+            android:src="@mipmap/brad_init"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+
+        <RelativeLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+
+        >
+
+            <RelativeLayout
+                    android:id="@+id/rl_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@mipmap/login_user_ico">
+
+                <EditText
+                        android:id="@+id/et_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="85dp"
+                        android:background="@null"
+                        android:digits="@string/login_password"
+                        android:hint="请输入商户名"
+                        android:inputType="textVisiblePassword"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_passWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/rl_user"
+                    android:background="@mipmap/login_user_password"
+
+            >
+
+                <EditText
+                        android:id="@+id/et_passWord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="85dp"
+                        android:background="@null"
+                        android:digits="@string/login_password"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/rl_passWord"
+                    android:layout_marginTop="30dp">
+
+                <Button
+                        android:id="@+id/bt_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_login_selector"
+                        android:text="登录"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

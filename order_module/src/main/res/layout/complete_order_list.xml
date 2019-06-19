@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/cardview"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="3dp"
+		android:clickable="true"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:elevation="2dp"
+		app:cardBackgroundColor="@color/colorWhite"
+		app:cardCornerRadius="10dp"
+		app:cardElevation="3dp"
+		app:cardPreventCornerOverlap="true">
+
+	<LinearLayout
+			android:layout_marginTop="1dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorWhite"
+			android:orientation="vertical">
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+		>
+
+
+			<TextView
+					android:visibility="gone"
+					android:id="@+id/tv_order_number"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginTop="30dp"
+					android:text="订单编号:1112019"
+					style="@style/s14c5d5d5d"
+			/>
+
+			<TextView
+					android:id="@+id/tv_bucket_classify"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="10dp"
+					android:text="景甜返现"
+					style="@style/s25c5d5d5d"
+			/>
+
+			<TextView
+					android:id="@+id/tv_product_bucket_numbers"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/tv_bucket_classify"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="10dp"
+					android:text="X10"
+					android:textColor="@color/colorRed"
+					android:textSize="18sp"
+			/>
+
+
+		</RelativeLayout>
+
+		<include layout="@layout/line"/>
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp">
+
+			<ImageView
+					android:id="@+id/iv_phone_call"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="15dp"
+					android:src="@mipmap/call"/>
+
+			<TextView
+					android:id="@+id/tv_user_phone_number"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="190dp"
+					android:text="18210689075"
+					style="@style/s14c5d5d5d"/>
+
+			<TextView
+					android:id="@+id/tv_user_name"
+					android:layout_marginLeft="18dp"
+					android:layout_width="170dp"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:text="张三"
+					style="@style/s14c5d5d5d"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentStart="true"
+					android:layout_marginStart="18dp"/>
+		</RelativeLayout>
+
+		<include layout="@layout/line"/>
+
+		<RelativeLayout
+				android:id="@+id/rl_user_address"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:padding="10dp">
+
+			<ImageView
+					android:id="@+id/iv_location"
+					android:layout_centerVertical="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_marginLeft="20dp"
+					android:src="@mipmap/location_gray"/>
+
+			<TextView
+					android:id="@+id/tv_user_address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_toLeftOf="@+id/iv_i"
+					android:layout_marginLeft="5dp"
+					android:layout_toRightOf="@+id/iv_location"
+					android:text="北京市昌平区琥珀天地"
+					style="@style/s14c5d5d5d"
+			/>
+
+
+			<ImageView
+					android:visibility="gone"
+					android:id="@+id/iv_i"
+					android:layout_alignParentRight="true"
+					android:layout_width="40dp"
+					android:layout_height="20dp"
+					android:src="@mipmap/road29"
+			/>
+
+
+		</RelativeLayout>
+
+		<include layout="@layout/line"/>
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:padding="10dp">
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="20dp"
+					android:src="@mipmap/calendar_gray"/>
+
+			<TextView
+					android:id="@+id/tv_product_complected_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="50dp"
+					android:text="2016.03.15"
+					style="@style/s14c5d5d5d"/>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="190dp"
+					android:src="@mipmap/clock_gray"/>
+
+			<TextView
+					android:id="@+id/tv_product_complected_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="220dp"
+					android:text="11:30-12:00"
+					style="@style/s14c5d5d5d"/>
+		</RelativeLayout>
+
+		<include layout="@layout/line"/>
+		<RelativeLayout
+				android:id="@+id/rl_user_suggestion"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:padding="10dp">
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="20dp"
+					android:text="客户留言:"
+					style="@style/s14c5d5d5d"/>
+
+			<TextView
+					android:id="@+id/tv_user_remark"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="99dp"
+					android:text="希望越快越好"
+					style="@style/s14c5d5d5d"/>
+		</RelativeLayout>
+
+
+		<include layout="@layout/line"/>
+
+		<RelativeLayout
+				android:id="@+id/rl_remarks"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:padding="10dp">
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="20dp"
+					android:text="饮水机备注:"
+					style="@style/s14c5d5d5d"/>
+
+			<TextView
+					android:id="@+id/tv_store_remarks"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="99dp"
+					android:text="希望越快越好"
+					style="@style/s14red"/>
+		</RelativeLayout>
+
+
+		<include layout="@layout/line"/>
+
+
+		<RelativeLayout
+				android:id="@+id/rl_order_confirm"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:padding="10dp">
+			<TextView
+					android:id="@+id/tv_send_date"
+					android:text="2016.03.15"
+					android:layout_marginLeft="15dp"
+					android:layout_width="wrap_content"
+					style="@style/s14c5d5d5d"
+					android:layout_centerVertical="true"
+					android:layout_height="wrap_content"/>
+			<TextView
+					android:id="@+id/tv_send_time"
+					android:layout_marginLeft="10dp"
+					android:layout_toRightOf="@+id/tv_send_date"
+					android:layout_centerVertical="true"
+					android:text="12:40 送达"
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+
+			<Button
+
+					android:id="@+id/btn_confirm"
+					android:layout_width="85dp"
+					android:layout_height="35dp"
+					android:background="@mipmap/bule_button_normal"
+					android:text="订单取回"
+					style="@style/s14cf9f9f9"
+					android:layout_alignParentRight="true"
+			/>
+		</RelativeLayout>
+
+		<!-- <include layout="@layout/line" />-->
+		<RelativeLayout
+
+				android:visibility="gone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+
+			<LinearLayout
+					android:id="@+id/ll_is_back"
+					android:padding="10dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+				<LinearLayout
+						android:paddingLeft="15dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+
+					<TextView
+							android:id="@+id/tv_back_mb"
+							android:text="押金为:"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/s14c5d5d5d"
+					/>
+
+					<TextView
+							android:id="@+id/tv_back_money"
+							android:layout_marginLeft="5dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="0元"
+							style="@style/s14red"
+					/>
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_marginLeft="20dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+
+					<TextView
+							android:id="@+id/tv_back_bb"
+							android:text="回桶为:"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/s14c5d5d5d"
+					/>
+
+					<TextView
+							android:id="@+id/tv_back_brand"
+							android:layout_marginLeft="5dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="景田X1,哇哈哈X1"
+							style="@style/s14red"
+					/>
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+		</RelativeLayout>
+
+
+		<include layout="@layout/line"/>
+	</LinearLayout>
+</android.support.v7.widget.CardView>

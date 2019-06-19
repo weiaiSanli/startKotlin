@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <shiq.com.common.view.NoScrollViewPager
+            android:id="@+id/vp_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+    </shiq.com.common.view.NoScrollViewPager>
+
+    <include
+            layout="@layout/cutrule"
+            android:layout_height="2dp" android:layout_width="match_parent"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioGroup
+                android:id="@+id/rg_new_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <RadioButton
+                    android:id="@+id/rb_outstanding"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/order_selector"
+                    android:gravity="center"
+                    android:textColor="@drawable/home_button_textcolor_selector"
+                    android:padding="5dp"
+                    android:textSize="@dimen/ts10"
+                    android:text="订单处理" />
+
+            <RadioButton
+                    android:id="@+id/rb_completed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/quit_selector"
+                    android:gravity="center"
+                    android:textColor="@drawable/home_button_textcolor_selector"
+                    android:padding="5dp"
+                    android:textSize="@dimen/ts10"
+                    android:text="订单查询" />
+
+            <RadioButton
+                    android:id="@+id/rb_store"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/store_selector"
+                    android:gravity="center"
+                    android:textColor="@drawable/home_button_textcolor_selector"
+                    android:padding="5dp"
+                    android:textSize="@dimen/ts10"
+                    android:text="门店管理" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

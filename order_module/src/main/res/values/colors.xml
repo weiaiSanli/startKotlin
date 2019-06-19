@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- 分割线 -->
+    <color name="diver_line">#E2E2E2</color>
+
+    <!--文本显示框的背景色-->
+    <color name="colorBgdW">#f0f2f5</color>
+
+    <color name="colorLine">#C55F5F5F</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorblack">#2f3537</color>
+    <color name="colorf9f9f9">#f9f9f9</color>
+
+    <!--正常的数字颜色-->
+    <color name="colorNumber">#989898</color>
+
+</resources>

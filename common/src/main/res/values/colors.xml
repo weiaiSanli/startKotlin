@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#008577</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+
+	<!--蓝色字体-->
+	<color name="colorBlue">#4399fe</color>
+
+	<!--首页下单时候的字体颜色-->
+	<color name="color5d5d5d">#5d5d5d</color>
+	<!--首页下单时候按键的字体颜色-->
+	<color name="color3dceff">#3dceff</color>
+
+	<!-- 透明 -->
+	<color name="transparent">#00000000</color>
+
+	<!--上拉加载用的动画颜色-->
+	<color name="refreshColor">#EC5E2F</color>
+
+	<!--红色的颜色-->
+	<color name="colorRed">#ff5b5b</color>
+</resources>

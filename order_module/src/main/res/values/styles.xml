@@ -1,0 +1,56 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<!--颜色跟字体设置-->
+	<style name="s14c5d5d5d">
+		<item name="android:textColor">@color/color5d5d5d</item>
+		<item name="android:textSize">@dimen/ts14</item>
+	</style>
+
+	<!--颜色跟字体设置-->
+	<style name="s25c5d5d5d">
+		<item name="android:textColor">@color/color5d5d5d</item>
+		<item name="android:textSize">@dimen/ts25</item>
+	</style>
+
+
+	<!--颜色跟字体设置-->
+	<style name="s14red">
+		<item name="android:textColor">@color/colorRed</item>
+		<item name="android:textSize">@dimen/ts14</item>
+	</style>
+
+	<!--颜色跟字体设置-->
+	<style name="s14cf9f9f9">
+		<item name="android:textColor">@color/colorf9f9f9</item>
+		<item name="android:textSize">@dimen/ts14</item>
+	</style>
+
+	<style name="s16c5">
+		<item name="android:textColor">@color/color5d5d5d</item>
+		<item name="android:textSize">@dimen/ts16</item>
+	</style>
+
+	<style name="s14c989898">
+		<item name="android:textColor">@color/colorNumber</item>
+		<item name="android:textSize">@dimen/ts14</item>
+	</style>
+
+	<style name="s18cred">
+		<item name="android:textColor">@color/colorRed</item>
+		<item name="android:textSize">@dimen/ts25</item>
+	</style>
+
+	<style name="s18c5d5d5d">
+		<item name="android:textColor">@color/color5d5d5d</item>
+		<item name="android:textSize">@dimen/ts25</item>
+	</style>
+
+</resources>

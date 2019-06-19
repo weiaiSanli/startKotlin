@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorBgdW"
+			android:orientation="vertical">
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="160dp"
+				android:background="@mipmap/back_srore">
+
+			<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:orientation="vertical">
+
+
+				<ImageView
+						android:id="@+id/iv_photo"
+						android:layout_width="85dp"
+						android:layout_height="85dp"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="20dp"
+						android:src="@mipmap/brad_init" />
+
+				<TextView
+						android:id="@+id/tv_store"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginTop="15dp"
+						android:textColor="@color/colorWhite"
+						android:textSize="22sp"
+						android:textStyle="normal"
+
+				/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<include layout="@layout/store_include" />
+		<!--<include layout="@layout/order_include" />-->
+
+
+		<RelativeLayout
+				android:id="@+id/rl_company"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:background="@color/colorWhite"
+				android:paddingBottom="5dp"
+				android:paddingLeft="20dp"
+				android:paddingTop="5dp">
+
+			<TextView
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="公司用户" />
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dp"
+					android:padding="10dp"
+					android:src="@mipmap/left" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+				android:id="@+id/rl_belling"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				android:background="@color/colorWhite"
+				android:paddingBottom="5dp"
+				android:paddingLeft="20dp"
+				android:paddingTop="2dp"
+				android:visibility="gone">
+
+			<TextView
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="账单结算" />
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dp"
+					android:padding="10dp"
+					android:src="@mipmap/left" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+				android:id="@+id/rl_employee_manager"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				android:background="@color/colorWhite"
+				android:paddingBottom="5dp"
+				android:paddingLeft="20dp"
+				android:paddingTop="5dp">
+
+			<TextView
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="员工管理" />
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dp"
+					android:padding="10dp"
+					android:src="@mipmap/left" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+				android:id="@+id/rl_employee_count"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				android:background="@color/colorWhite"
+				android:paddingBottom="5dp"
+				android:paddingLeft="20dp"
+				android:paddingTop="5dp">
+
+			<TextView
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="员工统计" />
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dp"
+					android:padding="10dp"
+					android:src="@mipmap/left" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+				android:id="@+id/rl_song_update"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				android:background="@color/colorWhite"
+				android:paddingBottom="5dp"
+				android:paddingLeft="20dp"
+				android:paddingTop="5dp">
+
+			<TextView
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="送水工下载" />
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dp"
+					android:padding="10dp"
+					android:src="@mipmap/left" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+				android:id="@+id/rl_security_setting"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				android:background="@color/colorWhite"
+				android:paddingBottom="5dp"
+				android:paddingLeft="20dp"
+				android:paddingTop="5dp">
+
+			<TextView
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="安全验证设置" />
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dp"
+					android:padding="10dp"
+					android:src="@mipmap/left" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+				android:id="@+id/rl_ling_water"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				android:background="@color/colorWhite"
+				android:paddingBottom="5dp"
+				android:paddingLeft="20dp"
+				android:paddingTop="5dp">
+
+			<TextView
+					style="@style/s14c5d5d5d"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="提示音" />
+
+			<CheckBox
+					android:id="@+id/cb_chose_sound"
+					android:layout_width="35dp"
+					android:layout_height="20dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_margin="5dp"
+					android:layout_marginRight="5dp"
+					android:background="@drawable/img_sex"
+					android:button="@null" />
+
+		</RelativeLayout>
+
+
+		<TextView
+				android:id="@+id/tv_quit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp"
+				android:background="@color/colorWhite"
+				android:gravity="center"
+				android:padding="10dp"
+				android:text="退出登录" />
+
+		<TextView
+				android:id="@+id/tv_servion_desc"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:gravity="center"
+				android:text="当前版本号:1.4"
+				android:textColor="#808080"
+				android:textSize="10sp"
+
+		/>
+
+
+	</LinearLayout>
+
+</ScrollView>
