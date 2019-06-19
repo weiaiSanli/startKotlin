@@ -6,6 +6,9 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            url  "https://dl.bintray.com/weiaicmeng/sqcommon"
+        }
 
     }
     dependencies {
@@ -22,6 +25,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url  "https://dl.bintray.com/weiaicmeng/sqcommon"
+        }
 
     }
 }
