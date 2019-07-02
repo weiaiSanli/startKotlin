@@ -28,7 +28,6 @@ allprojects {
         maven {
             url  "https://dl.bintray.com/weiaicmeng/sqcommon"
         }
-
     }
 }
 

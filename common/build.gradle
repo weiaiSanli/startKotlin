@@ -28,19 +28,20 @@ android {
 
 
     buildTypes {
-        tesing {// 测试
-            minifyEnabled false
-            buildConfigField("boolean", "isDebug", "true")
+        def url = new File("D://UI/test.txt").eachLine {
+            return it.toString()
         }
-        demo {// 预上线
-            minifyEnabled false
-            buildConfigField("boolean", "isDebug", "true")
-        }
-        release {// 正式
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-            buildConfigField("boolean", "isDebug", "false")
 
+        debug{
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", url)
+            buildConfigField("boolean", "isDebug", "true")
+        }
+        release {
+            minifyEnabled false
+            buildConfigField("String", "BASE_URL", url)
+            buildConfigField("boolean", "isDebug", "false")
         }
     }
 
