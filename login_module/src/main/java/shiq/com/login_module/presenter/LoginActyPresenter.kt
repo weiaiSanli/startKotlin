@@ -13,6 +13,7 @@ import shiq.com.common.retrofit.retrofit
 class LoginActyPresenter(view: LoginActyContract.View) :
     BasePresenter<LoginActyContract.View>(view), LoginActyContract.Presenter{
 
+    //登录逻辑,需要token验证信息保存到Sp中
     override fun loginUser() {
 
         retrofit<LoginBean> {
@@ -20,7 +21,6 @@ class LoginActyPresenter(view: LoginActyContract.View) :
             map.apply {
                 this["userName"] = mvpView?.getUserName()
                 this["passWord"] = mvpView?.getPassword()
-
             }
             api = LoginApi.instance.login(map)
 
@@ -30,9 +30,7 @@ class LoginActyPresenter(view: LoginActyContract.View) :
 
             onFailed { error, _ ->
                 mvpView?.loginError(error)
-
             }
-
         }
     }
 }

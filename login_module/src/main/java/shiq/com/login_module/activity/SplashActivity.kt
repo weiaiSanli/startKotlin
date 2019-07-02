@@ -61,7 +61,12 @@ class SplashActivity : BaseActivity(){
         startActivity(ShopMainActivity::class.java)
         finish()
 
-//        ARouter.getInstance().build(ArouterConst.OrderModule.order_orderActivity).navigation(this)
+//        ARouter.getInstance().build(ArouterConst.OrderModule.order_orderActivity)
+//            .navigation(this , navigationCallback {
+//                onFound {
+//                    "找到了界面".log()
+//                }
+//            })
     }
 
 
