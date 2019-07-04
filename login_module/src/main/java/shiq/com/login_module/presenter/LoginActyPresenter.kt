@@ -13,7 +13,7 @@ import shiq.com.common.retrofit.retrofit
 class LoginActyPresenter(view: LoginActyContract.View) :
     BasePresenter<LoginActyContract.View>(view), LoginActyContract.Presenter{
 
-    //登录逻辑,需要token验证信息保存到Sp中
+    //登录逻辑,需要token验证信息保存到Sp中.SP使用lazy函数
     override fun loginUser() {
 
         retrofit<LoginBean> {
