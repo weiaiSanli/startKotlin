@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply from:new File(project.getProjectDir().parent , "urlpath.gradle")
 
 //必须引入这2个插件
 apply plugin : 'com.github.dcendents.android-maven'
@@ -28,9 +29,11 @@ android {
 
 
     buildTypes {
-        def url = new File("D://UI/test.txt").eachLine {
-            return it.toString()
-        }
+//        def url = new File("D://UI/test.txt").eachLine {
+//            return it.toString()
+//        }
+        def url = project.ext.urlPath
+        println("woshi $url")
 
         debug{
             minifyEnabled false

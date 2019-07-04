@@ -1,15 +1,23 @@
 package shiq.com.login_module.activity
 
 import android.content.Context
+import android.media.session.MediaSession
 import android.widget.TextView
 import android.widget.Toast
 import com.alibaba.android.arouter.launcher.ARouter
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import shiq.com.common.base.BaseActivity
 import shiq.com.common.utils.*
 import shiq.com.login_module.R
+import shiq.com.login_module.bean.Post
+import shiq.com.login_module.bean.Token
 import java.util.concurrent.TimeUnit
+import kotlin.coroutines.CoroutineContext
 
 /**
  * created by shi on 2019/6/13/013
@@ -33,7 +41,37 @@ class SplashActivity : BaseActivity(){
 
     override fun initData() {
 
-        enitAcitivity()
+        GlobalScope.launch {
+
+            val token = requestToken()
+            val post = createPost(token , "123")
+            processPost(post)
+        }
+
+
+
+//        enitAcitivity()
+
+    }
+    //被suspend用作修饰会被暂停的函数，被标记为 suspend 的函数只能运行在协程或者其他 suspend 函数当中。
+    suspend fun requestToken(): Token {
+        return Token("shiq")
+    }
+
+    suspend fun createPost(token:Token , pwd:String): Post{
+        if (token.token == "shiq" && pwd == "123"){
+            return Post("success")
+        }
+        return Post("error")
+    }
+
+    fun processPost(post: Post) {
+
+        if (post.success == "success"){
+            toast("登录成功")
+        }else{
+            toast("登录失败")
+        }
 
     }
 

@@ -41,8 +41,8 @@ class LoginActivity : MvpActivity<LoginActyPresenter>(), LoginActyContract.View 
    private val btLogin by bindView<Button>(R.id.bt_login)
 
     override fun initView() {
-        etUser.text = "17610551702".toEditable()
-        etPassWord.text = "sq1761055".toEditable()
+        etUser.text = "18353245125".toEditable()
+        etPassWord.text = "123456".toEditable()
     }
 
     private var canLoginNet: Boolean = true

@@ -1,0 +1,15 @@
+println "configuring $project"
+
+task hello{
+    doLast{
+        println 'hello from other script'
+    }
+}
+
+
+
+ext{
+    urlPath = new File("D://UI/test.txt").eachLine {
+        return it.toString()
+    }
+}
