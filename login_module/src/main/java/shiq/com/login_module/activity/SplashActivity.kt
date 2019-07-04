@@ -58,6 +58,9 @@ class SplashActivity : BaseActivity(){
         return Token("shiq")
     }
 
+    /**
+     * 设置suspend函数
+     */
     suspend fun createPost(token:Token , pwd:String): Post{
         if (token.token == "shiq" && pwd == "123"){
             return Post("success")
