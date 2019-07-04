@@ -11,6 +11,7 @@ import shiq.com.common.utils.log
 import java.io.IOException
 
 /**
+ * Retrofit网络请求的协程封装类
  * created by shi on 2019/6/12/012
  */
 fun <ResultType> CoroutineScope.retrofit(
